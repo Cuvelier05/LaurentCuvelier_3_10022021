@@ -1,3 +1,41 @@
 body {
   text-decoration: none;
+  text-align: center;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+/*HEADER*/
+header h1 {
+  text-align: center;
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+}
+
+/*SECTION SEARCH*/
+.search {
+  background-color: #f6f6f6;
+}
+
+/*SECTION TOOLS*/
+.tools ul {
+  list-style-type: none;
+}
+/*MAIN*/
+.restaurant {
+  background-color: #f6f6f6;
+}
+
+/*FOOTER*/
+footer {
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer ul {
+  padding: 0;
+  list-style-type: none;
 }
