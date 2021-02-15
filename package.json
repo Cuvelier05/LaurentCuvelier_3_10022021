@@ -1,0 +1,22 @@
+{
+  "name": "projet_3-oh_my_food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cuvelier05/LaurentCuvelier_3_10022021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cuvelier05/LaurentCuvelier_3_10022021/issues"
+  },
+  "homepage": "https://github.com/Cuvelier05/LaurentCuvelier_3_10022021#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
