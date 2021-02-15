@@ -1,8 +1,13 @@
+* {
+  list-style-type: none;
+}
+
 body {
+  margin: 0;
   text-decoration: none;
   text-align: center;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  margin: auto;
+  background-color: pink;
 }
 
 /*HEADER*/
@@ -16,13 +21,16 @@ header h1 {
   background-color: #f6f6f6;
 }
 
-/*SECTION TOOLS*/
-.tools ul {
-  list-style-type: none;
-}
 /*MAIN*/
 .restaurant {
-  background-color: #f6f6f6;
+  margin: 0;
+  background-color: pink;
+}
+
+.restaurant img {
+  object-fit: cover;
+  width: 100%;
+  height: 175px;
 }
 
 /*FOOTER*/
@@ -37,5 +45,4 @@ footer a {
 }
 footer ul {
   padding: 0;
-  list-style-type: none;
 }
