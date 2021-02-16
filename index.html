@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Oh my food</title>
+    <title>Ohmyfood</title>
   </head>
 
   <body>
@@ -29,30 +29,33 @@
 
     <!--SEARCH SECTION-->
     <section class="search">
-      <i class="fas fa-map-marker-alt"></i>
-      <input type="text" placeholder="Paris,Belleville" />
+      <div class="input_container">
+        <i class="fas fa-map-marker-alt input_icon"></i>
+        <input type="text" placeholder="Paris,Belleville" />
+      </div>
       <h2>Réservez le menu qui vous convient</h2>
       <span
         >Découvrez des restaurants d'exception,sélectionnés par nos soins.</span
       >
       <button>Explorer nos restaurants</button>
     </section>
+
     <!--WORKING SECTION-->
     <section class="tools">
-      <h2>Fonctionnement</h2>
+      <h3>Fonctionnement</h3>
       <ol>
         <li>
-          <i class="fas fa-mobile-alt"></i>
+          <i class="fas fa-mobile-alt icone"></i>
           <span>Choisissez un restaurant</span>
         </li>
 
         <li>
-          <i class="fas fa-list"></i>
+          <i class="fas fa-list icone"></i>
           <span>Composez votre menu</span>
         </li>
 
         <li>
-          <i class="fas fa-store"></i>
+          <i class="fas fa-store icone"></i>
           <span>Dégustez au restaurant</span>
         </li>
       </ol>
@@ -60,16 +63,20 @@
 
     <!--MAIN-->
     <main class="restaurant">
-      <h2>Restaurants</h2>
+      <h3>Restaurants</h3>
 
       <a class="box" href="#">
         <figure>
           <img src="images/restaurants/mini_la-palette-du-gout.jpg" />
           <figcaption>
-            <h3>La palette du goût</h3>
-            <p>Ménilmontant</p>
+            <div class="description">
+              <h4>La palette du goût</h4>
+              <p>Ménilmontant</p>
+            </div>
+            <div>
+              <i class="far fa-heart"></i>
+            </div>
           </figcaption>
-          <i class="far fa-heart"></i>
         </figure>
       </a>
 
@@ -77,9 +84,13 @@
         <figure>
           <img src="images/restaurants/mini_la-note-enchantee.jpg" />
           <figcaption>
-            <h3>La note enchantée</h3>
-            <p>Charonne</p>
-            <i class="far fa-heart"></i>
+            <div class="description">
+              <h4>La note enchantée</h4>
+              <p>Charonne</p>
+            </div>
+            <div>
+              <i class="far fa-heart"></i>
+            </div>
           </figcaption>
         </figure>
       </a>
@@ -88,9 +99,13 @@
         <figure>
           <img src="images/restaurants/mini_a-la-francaise.jpg" />
           <figcaption>
-            <h3>À la française</h3>
-            <p>Cité Rouge</p>
-            <i class="far fa-heart"></i>
+            <div class="description">
+              <h4>À la française</h4>
+              <p>Cité Rouge</p>
+            </div>
+            <div>
+              <i class="far fa-heart"></i>
+            </div>
           </figcaption>
         </figure>
       </a>
@@ -99,9 +114,13 @@
         <figure>
           <img src="images/restaurants/mini_les-delices-des-sens.jpg" />
           <figcaption>
-            <h3>Le délice des sens</h3>
-            <p>Folie-Méricourt</p>
-            <i class="far fa-heart"></i>
+            <div class="description">
+              <h4>Le délice des sens</h4>
+              <p>Folie-Méricourt</p>
+            </div>
+            <div>
+              <i class="far fa-heart"></i>
+            </div>
           </figcaption>
         </figure>
       </a>
@@ -109,15 +128,15 @@
 
     <!--FOOTER-->
     <footer>
-      <h4>ohmyfood</h4>
+      <img src="images/logo/ohmyffood_logo.png" />
       <ul>
         <li>
-          <i class="fas fa-utensils"></i>
+          <i class="fas fa-utensils icone"></i>
           <a href="#">Proposer un restaurant</a>
         </li>
 
         <li>
-          <i class="fas fa-hands-helping"></i>
+          <i class="fas fa-hands-helping icone"></i>
           <a href="#">Devenir partenaire</a>
         </li>
         <li><a href="#">Mentions légales</a></li>
