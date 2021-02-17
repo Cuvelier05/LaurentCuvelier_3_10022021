@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   text-decoration: none;
@@ -8,29 +9,20 @@ body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-/*HEADER*/
-header h1 {
-  text-align: center;
-  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-}
-
 /*SEARCH SECTION*/
 .search {
   background-color: #f6f6f6;
 }
-
-.input_container {
+.search .search_container {
   position: relative;
 }
-
-.input_icon {
+.search .search_container .input_icon {
   position: absolute;
   top: 33%;
   left: 20%;
   font-size: 15px;
 }
-
-.search input {
+.search .search_container input {
   padding-top: 1em;
   padding-bottom: 1em;
   border: none;
@@ -40,11 +32,9 @@ header h1 {
   font-size: medium;
   background-color: #e5e5e5;
 }
-
-.search ::placeholder {
+.search .search_container input ::placeholder {
   color: black;
 }
-
 .search button {
   cursor: pointer;
   color: white;
@@ -57,17 +47,18 @@ header h1 {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-
 .search button :active {
   outline: none;
 }
 
 /* WORKING SECTION */
+.tools .icone {
+  padding-right: 0.5em;
+}
 .tools ol {
   padding: 0;
   list-style: none;
 }
-
 .tools li {
   margin: auto;
   position: relative;
@@ -82,8 +73,7 @@ header h1 {
   counter-increment: li;
   font-weight: bold;
 }
-
-.tools li::before {
+.tools li ::before {
   position: absolute;
   left: -9px;
   color: white;
@@ -93,10 +83,6 @@ header h1 {
   width: 1em;
   padding: 1px 3px;
   border-radius: 11px;
-}
-
-.tools .icone {
-  padding-right: 0.5em;
 }
 
 /*MAIN*/
@@ -111,13 +97,6 @@ header h1 {
   max-width: 90%;
   margin: auto;
 }
-
-.description h4,
-p {
-  margin: 0;
-  font-size: medium;
-}
-
 .restaurant a {
   color: black;
   text-align: left;
@@ -143,7 +122,6 @@ p {
   border-radius: 1em 1em 0 0;
 }
 
-/*FOOTER*/
 footer {
   text-align: left;
   background-color: black;
@@ -157,10 +135,8 @@ footer img {
 footer h4 {
   font-family: "Shrikland";
   font-size: 2em;
-  font-style: italic;
   font-weight: bold;
 }
-
 footer a {
   color: white;
   text-decoration: none;
@@ -173,3 +149,5 @@ footer ul {
 footer .icone {
   padding-right: 0.5em;
 }
+
+/*# sourceMappingURL=style.css.map */
