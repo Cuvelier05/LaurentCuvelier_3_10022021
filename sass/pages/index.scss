@@ -1,5 +1,7 @@
 /*SEARCH SECTION*/
 .search {
+  display: flex;
+  flex-direction: column;
   background-color: #f6f6f6;
 
   & .search_container {
@@ -21,28 +23,26 @@
       font-weight: bold;
       font-size: medium;
       background-color: #e5e5e5;
+    }
 
-      & ::placeholder {
-        color: black;
-      }
+    & input::placeholder {
+      color: black;
     }
   }
 
   & button {
     cursor: pointer;
+    max-width: 50%;
     color: white;
     box-sizing: content-box;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(172deg, #ff79da 21%, #9356dc 79%);
     outline-style: none;
     padding: 1em;
+    margin: auto;
     margin-top: 2em;
     margin-bottom: 2em;
-
-    & :active {
-      outline: none;
-    }
+    @include gradient;
   }
 }
 
@@ -70,25 +70,30 @@
     border-radius: 1.5em;
     counter-increment: li;
     font-weight: bold;
+    cursor: pointer;
 
-    & ::before {
-      position: absolute;
-      left: -9px;
-      color: white;
-      background-color: #9356dc;
-      display: inline-block;
-      content: counter(li);
-      width: 1em;
-      padding: 1px 3px;
-      border-radius: 11px;
+    &:hover {
+      opacity: 0.9;
     }
+  }
+
+  & li::before {
+    position: absolute;
+    left: -9px;
+    color: white;
+    background-color: #9356dc;
+    display: inline-block;
+    content: counter(li);
+    width: 1em;
+    padding: 1px 3px;
+    border-radius: 11px;
   }
 }
 
 /*MAIN*/
 .restaurant {
   width: auto;
-  background-color: #f5f5f5;
+  background-color: $main-bckg-color;
   padding-top: 2em;
   padding-bottom: 2em;
 
@@ -117,6 +122,14 @@
     display: flex;
     justify-content: space-between;
     padding: 0.7em;
+    margin: 0;
+    font-size: medium;
+  }
+
+  & .description h4,
+  p {
+    margin: 0;
+    font-size: medium;
   }
 
   & img {

@@ -1,6 +1,6 @@
 footer {
   text-align: left;
-  background-color: black;
+  background-color: #353535;
   color: white;
   padding: 2em;
   & img {
@@ -23,5 +23,9 @@ footer {
   }
   & .icone {
     padding-right: 0.5em;
+  }
+  & .icone.hand {
+    transform: scale(0.9);
+    padding-right: 0.3em;
   }
 }
