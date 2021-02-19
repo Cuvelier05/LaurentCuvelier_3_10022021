@@ -52,11 +52,6 @@
     padding-right: 0.5em;
   }
 
-  & ol {
-    padding: 0;
-    list-style: none;
-  }
-
   & li {
     margin: auto;
     position: relative;
@@ -104,9 +99,7 @@
   }
 
   & a {
-    color: black;
     text-align: left;
-    text-decoration: none;
   }
 
   & figure {

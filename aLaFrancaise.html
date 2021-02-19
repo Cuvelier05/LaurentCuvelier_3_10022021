@@ -27,36 +27,54 @@
   <body>
     <!--HEADER-->
     <header>
-      <a href="./index.html">
-        <i class="fas fa-arrow-left"></i>
-      </a>
-      <h1>ohmyfood</h1>
+      <div class="header_contain">
+        <a href="./index.html" class="arrow">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1>ohmyfood</h1>
+      </div>
     </header>
 
     <!--MAIN-->
     <main>
       <figure>
-        <!--<img src="images/restaurants/mini_a-la-francaise.jpg" -->
+        <img
+          src="images/restaurants/mini_a-la-francaise.jpg"
+          alt="picture restaurant"
+        />
       </figure>
 
       <section class="menu">
-        <h2>À la française</h2>
+        <div class="restaurant_name">
+          <h2>À la française</h2>
+          <i class="far fa-heart"></i>
+        </div>
+
         <div class="entree">
           <h3>ENTRÉES</h3>
           <ul>
             <li>
-              <strong>Tartare de poulpe acidulé</strong><br />
-              Aux zestes d'orange 25€
+              <h4>Tartare de poulpe acidulé</h4>
+              <div class="accompaniements">
+                <p>Aux zestes d'orange</p>
+                <p class="price">25€</p>
+              </div>
             </li>
 
             <li>
-              <strong>Velouté de légumes d'antan</strong><br />
-              Carotte, panais, topinambour 35€
+              <h4>Velouté de légumes d'antan</h4>
+              <div class="accompaniements">
+                <p>Carotte, panais, topinambour</p>
+                <p class="price">35€</p>
+              </div>
             </li>
 
             <li>
-              <strong>Soupe à l'oignon</strong><br />
-              Revisitée 20€
+              <h4>Soupe à l'oignon</h4>
+              <div class="accompaniements">
+                <p>Revisitée</p>
+                <p class="price">20€</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -65,18 +83,27 @@
           <h3>PLATS</h3>
           <ul>
             <li>
-              <strong>Coquilles Saint-Jacques</strong><br />
-              Accompagnées d'une purée de panais 40€
+              <h4>Coquilles Saint-Jacques</h4>
+              <div class="accompaniements">
+                <p>Accompagnées d'une purée de panais</p>
+                <p class="price">40€</p>
+              </div>
             </li>
 
             <li>
-              <strong>Magret de canard</strong><br />
-              Et parmentier de pommes de terre 35€
+              <h4>Magret de canard</h4>
+              <div class="accompaniements">
+                <p>Et parmentier de pommes de terre</p>
+                <p class="price">35€</p>
+              </div>
             </li>
 
             <li>
-              <strong> Pigeonneau d’Ille-et-Vilaine</strong><br />
-              Sur son lit de gnocchis aux légumes 44€
+              <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+              <div class="accompaniements">
+                <p>Sur son lit de gnocchis aux légumes</p>
+                <p class="price">44€</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -85,26 +112,36 @@
           <h3>DESSERTS</h3>
           <ul>
             <li>
-              <strong>Pétales de violettes glacés</strong><br />
-              Et purée de noisettes 18€
+              <h4>Pétales de violettes glacés</h4>
+              <div class="accompaniements">
+                Et purée de noisettes
+                <p class="price">18€</p>
+              </div>
             </li>
 
             <li>
-              <strong>Fondant au chocolat</strong><br />
-              Revisité 22€
+              <h4>Fondant au chocolat</h4>
+              <div class="accompaniements">
+                <p>Revisité</p>
+                <p class="price">22€</p>
+              </div>
             </li>
 
             <li>
-              <strong> Millefeuille croustillant</strong><br />
-              Myrtilles et pâte d’amande 23€
+              <h4>Millefeuille croustillant</h4>
+              <div class="accompaniements">
+                <p>Myrtilles et pâte d’amande</p>
+                <p class="price">23€</p>
+              </div>
             </li>
           </ul>
         </div>
+        <button>Commander</button>
       </section>
     </main>
     <!--FOOTER-->
     <footer>
-      <img src="images/logo/ohmyffood_logo.png" />
+      <img src="images/logo/ohmyffood_logo.png" alt="logo oh my food" />
       <ul>
         <li>
           <i class="fas fa-utensils icone"></i>
