@@ -193,28 +193,66 @@ main .menu .restaurant_name {
 main .menu h2 {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
   text-align: left;
+  font-size: 1.7em;
+  margin-top: 1em;
 }
 main .menu h3 {
+  display: flex;
   text-align: left;
   font-weight: lighter;
 }
+main .menu h3 .underline {
+  border-bottom: 3px solid #99e2d0;
+}
 main .menu li {
+  display: flex;
   margin-bottom: 1.2em;
   background-color: white;
-  text-align: left;
   border-radius: 1em;
-  padding: 10px;
-  line-height: 1.5em;
-  font-size: small;
+  padding-left: 10px;
   box-shadow: 0 0 0.5em 0.3em #cccccc;
-}
-main .menu li h4,
-main .menu li p {
-  margin: 0;
 }
 main .menu li .accompaniements {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main .menu li .accompaniements .title_acc {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  padding-top: 0.5em;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .menu li .accompaniements .rest_acc {
+  display: flex;
   justify-content: space-between;
+  width: 95%;
+  margin: 0;
+  line-height: 2em;
+  padding-bottom: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .menu li .accompaniements p.price {
+  margin: 0;
+  font-weight: bold;
+  line-height: 2em;
+}
+main .menu .check {
+  display: flex;
+  color: white;
+  background-color: #99e2d0;
+  border-radius: 0em 1em 1em 0em;
+  width: 5em;
+}
+main .menu .check_icon {
+  margin: auto;
+  font-size: large;
 }
 main .menu button {
   cursor: pointer;
