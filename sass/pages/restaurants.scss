@@ -58,14 +58,17 @@ main {
 
       .accompaniements {
         display: flex;
+        flex: 1;
         flex-direction: column;
-        width: 100%;
         padding: 0.5em 0 0.5em 0.5em;
         text-align: left;
-
-        white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
+
+        & > span {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
 
         & .title_acc {
           margin: 0;
@@ -94,13 +97,13 @@ main {
       border-radius: 0em 1em 1em 0em;
       width: 0;
       overflow: hidden;
-      transition: width 750ms ease-in;
+      transition: width 400ms ease-in;
     }
 
     & .check {
       margin: auto;
       transform: rotate(0);
-      transition: transform 750ms;
+      transition: transform 400ms;
 
       & .check_icon {
         margin: auto;
@@ -110,7 +113,8 @@ main {
 
     & li:hover {
       .green-dow {
-        width: 5em;
+        width: 18%;
+        max-width: 5em;
       }
 
       .check {
