@@ -54,61 +54,74 @@ main {
       margin-bottom: 1.2em;
       background-color: white;
       border-radius: 1em;
-      padding-left: 10px;
       @include shadow;
 
       .accompaniements {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
+        padding: 0.5em 0 0.5em 0.5em;
+        text-align: left;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         & .title_acc {
           margin: 0;
-          font-size: 1.1em;
-          line-height: 1.5em;
-          padding-top: 0.5em;
           font-weight: bold;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
         }
-        .rest_acc {
-          display: flex;
-          justify-content: space-between;
-          width: 95%;
-          margin: 0;
-          line-height: 2em;
-          padding-bottom: 0.5em;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
+      }
+      .rest_acc {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-right: 0.5em;
 
-        p.price {
+        .price {
           margin: 0;
           font-weight: bold;
           line-height: 2em;
+          padding-top: 1.3em;
         }
       }
     }
 
-    & .check {
+    & .green-dow {
       display: flex;
       color: white;
       background-color: $color-tertiary;
       border-radius: 0em 1em 1em 0em;
-      width: 5em;
+      width: 0;
+      overflow: hidden;
+      transition: width 750ms ease-in;
     }
-    & .check_icon {
+
+    & .check {
       margin: auto;
-      font-size: large;
+      transform: rotate(0);
+      transition: transform 750ms;
+
+      & .check_icon {
+        margin: auto;
+        font-size: large;
+      }
+    }
+
+    & li:hover {
+      .green-dow {
+        width: 5em;
+      }
+
+      .check {
+        transform: rotate(-1turn);
+      }
     }
 
     button {
       cursor: pointer;
       max-width: 50%;
       color: white;
-      box-sizing: content-box;
       border: none;
       border-radius: 50px;
       outline-style: none;

@@ -15,8 +15,7 @@
     }
 
     & input {
-      padding-top: 1em;
-      padding-bottom: 1em;
+      padding: 1em 0 1em 0;
       border: none;
       width: 100%;
       text-align: center;
@@ -66,10 +65,12 @@
     counter-increment: li;
     font-weight: bold;
     cursor: pointer;
+  }
 
-    &:hover {
-      opacity: 0.9;
-    }
+  & li:hover {
+    background-color: #f2eafb;
+    opacity: 0.9;
+    color: #9356dc;
   }
 
   & li::before {
@@ -84,7 +85,6 @@
     border-radius: 11px;
   }
 }
-
 /*MAIN*/
 .restaurant {
   width: auto;
@@ -98,7 +98,7 @@
     margin: auto;
   }
 
-  & a {
+  & .box {
     text-align: left;
   }
 
@@ -109,6 +109,11 @@
     height: fit-content;
     background-color: white;
     border-radius: 1em;
+  }
+
+  & figure:hover {
+    background-color: #f2eafb;
+    opacity: 0.9;
   }
 
   & figcaption {

@@ -3,7 +3,7 @@
   animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
-@-webkit-keyframes slide-in-left {
+@keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-100px);
     transform: translateY(100px);
@@ -54,8 +54,7 @@ header h1 {
   font-size: 15px;
 }
 .search .search_container input {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 0 1em 0;
   border: none;
   width: 100%;
   text-align: center;
@@ -101,7 +100,9 @@ header h1 {
   cursor: pointer;
 }
 .tools li:hover {
+  background-color: #f2eafb;
   opacity: 0.9;
+  color: #9356dc;
 }
 .tools li::before {
   position: absolute;
@@ -127,7 +128,7 @@ header h1 {
   max-width: 90%;
   margin: auto;
 }
-.restaurant a {
+.restaurant .box {
   text-align: left;
 }
 .restaurant figure {
@@ -137,6 +138,10 @@ header h1 {
   height: fit-content;
   background-color: white;
   border-radius: 1em;
+}
+.restaurant figure:hover {
+  background-color: #f2eafb;
+  opacity: 0.9;
 }
 .restaurant figcaption {
   display: flex;
@@ -209,56 +214,62 @@ main .menu li {
   margin-bottom: 1.2em;
   background-color: white;
   border-radius: 1em;
-  padding-left: 10px;
   box-shadow: 0 0 0.5em 0.3em #cccccc;
 }
 main .menu li .accompaniements {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
+  padding: 0.5em 0 0.5em 0.5em;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 main .menu li .accompaniements .title_acc {
   margin: 0;
-  font-size: 1.1em;
-  line-height: 1.5em;
-  padding-top: 0.5em;
   font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
-main .menu li .accompaniements .rest_acc {
+main .menu li .rest_acc {
   display: flex;
   justify-content: space-between;
-  width: 95%;
   margin: 0;
-  line-height: 2em;
-  padding-bottom: 0.5em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-right: 0.5em;
 }
-main .menu li .accompaniements p.price {
+main .menu li .rest_acc .price {
   margin: 0;
   font-weight: bold;
   line-height: 2em;
+  padding-top: 1.3em;
 }
-main .menu .check {
+main .menu .green-dow {
   display: flex;
   color: white;
   background-color: #99e2d0;
   border-radius: 0em 1em 1em 0em;
-  width: 5em;
+  width: 0;
+  overflow: hidden;
+  transition: width 750ms ease-in;
 }
-main .menu .check_icon {
+main .menu .check {
+  margin: auto;
+  transform: rotate(0);
+  transition: transform 750ms;
+}
+main .menu .check .check_icon {
   margin: auto;
   font-size: large;
+}
+main .menu li:hover .green-dow {
+  width: 5em;
+}
+main .menu li:hover .check {
+  transform: rotate(-1turn);
 }
 main .menu button {
   cursor: pointer;
   max-width: 50%;
   color: white;
-  box-sizing: content-box;
   border: none;
   border-radius: 50px;
   outline-style: none;
