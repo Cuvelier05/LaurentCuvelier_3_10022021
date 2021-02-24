@@ -6,6 +6,7 @@
 
   & .search_container {
     position: relative;
+    border-top: hotpink 2px;
 
     & .input_icon {
       position: absolute;
@@ -15,13 +16,15 @@
     }
 
     & input {
-      padding: 1em 0 1em 0;
-      border: none;
       width: 100%;
+      padding: 1em 0 1em 0;
       text-align: center;
       font-weight: bold;
       font-size: medium;
       background-color: #e5e5e5;
+      border: none;
+      outline: none;
+      border-top: hotpink;
     }
 
     & input::placeholder {
@@ -103,17 +106,30 @@
   }
 
   & figure {
+    position: relative;
     margin: auto;
     margin-top: 1em;
     width: 90%;
     height: fit-content;
     background-color: white;
     border-radius: 1em;
-  }
 
-  & figure:hover {
-    background-color: #f2eafb;
-    opacity: 0.9;
+    &:hover {
+      background-color: #f2eafb;
+      opacity: 0.9;
+    }
+  }
+  .new_restaurant::before {
+    position: absolute;
+    content: "Nouveau";
+    padding: 0.5em;
+    background-color: $color-tertiary;
+    top: 1em;
+    right: 1em;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 0.2em;
+    color: #008766;
   }
 
   & figcaption {
