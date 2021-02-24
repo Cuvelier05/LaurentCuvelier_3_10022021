@@ -1,6 +1,18 @@
-.slide-in-left {
-  -webkit-animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-  animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+.slide_in_left {
+  -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.slide_in_left_2 {
+  -webkit-animation: slide-in-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: slide-in-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 2s;
+}
+
+.slide_in_left_3 {
+  -webkit-animation: slide-in-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: slide-in-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 4s;
 }
 
 @keyframes slide-in-left {
@@ -46,6 +58,7 @@ header h1 {
 }
 .search .search_container {
   position: relative;
+  border-top: hotpink 2px;
 }
 .search .search_container .input_icon {
   position: absolute;
@@ -54,13 +67,15 @@ header h1 {
   font-size: 15px;
 }
 .search .search_container input {
-  padding: 1em 0 1em 0;
-  border: none;
   width: 100%;
+  padding: 1em 0 1em 0;
   text-align: center;
   font-weight: bold;
   font-size: medium;
   background-color: #e5e5e5;
+  border: none;
+  outline: none;
+  border-top: hotpink;
 }
 .search .search_container input::placeholder {
   color: black;
@@ -132,6 +147,7 @@ header h1 {
   text-align: left;
 }
 .restaurant figure {
+  position: relative;
   margin: auto;
   margin-top: 1em;
   width: 90%;
@@ -142,6 +158,18 @@ header h1 {
 .restaurant figure:hover {
   background-color: #f2eafb;
   opacity: 0.9;
+}
+.restaurant .new_restaurant::before {
+  position: absolute;
+  content: "Nouveau";
+  padding: 0.5em;
+  background-color: #99e2d0;
+  top: 1em;
+  right: 1em;
+  font-size: small;
+  font-weight: bold;
+  border-radius: 0.2em;
+  color: #008766;
 }
 .restaurant figcaption {
   display: flex;
