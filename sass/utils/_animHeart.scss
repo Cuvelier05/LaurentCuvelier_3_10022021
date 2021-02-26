@@ -1,0 +1,38 @@
+.like {
+  .empty {
+    font-size: 1.7em;
+    position: relative;
+  }
+
+  .full,
+  .full_modif {
+    color: gradient($color-primary, $color-secondary);
+    background: -webkit-linear-gradient($color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 0;
+    position: absolute;
+    font-size: 1.7em;
+    right: 0.6em;
+    transition: opacity 250ms;
+    -webkit-text-fill-color: transparent;
+  }
+  .full_modif {
+    right: 0.4em;
+  }
+}
+
+.like:hover {
+  .empty {
+    opacity: 0;
+    transition: opacity 1s;
+    transform-origin: center;
+  }
+
+  .full,
+  .full_modif {
+    opacity: 1;
+    transition: opacity 1s;
+    transform-origin: center;
+  }
+}

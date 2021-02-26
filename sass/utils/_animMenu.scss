@@ -1,0 +1,72 @@
+/* APPARITION DES MENUS */
+
+@keyframes slide_in {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.first {
+  animation: slide_in 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+.second {
+  animation: slide_in 2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+.third {
+  animation: slide_in 2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+.fourth {
+  animation: slide_in 2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 1.5s;
+}
+
+.fifth {
+  animation: slide_in 2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 2s;
+}
+
+.sixth {
+  animation: slide_in 2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 2.5s;
+}
+
+.seventh {
+  animation: slide_in 2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 3s;
+}
+
+.eighth {
+  animation: slide_in 2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 3.5s;
+}
+
+.ninth {
+  animation: slide_in 2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 4s;
+}
+
+.tenth {
+  animation: slide_in 2s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 4.5s;
+}

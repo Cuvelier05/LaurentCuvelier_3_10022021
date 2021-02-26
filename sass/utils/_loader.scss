@@ -1,0 +1,26 @@
+/*.arriere_plan {
+  background-color: $color-tertiary;
+  font-size: xx-large;
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  top: 0;
+  cursor: wait;
+  color: white;
+  line-height: 300%;
+
+  .loader {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+
+  .loader-quart {
+    position: relative;
+    border-radius: 100px;
+    border: 10px solid $color-primary;
+  }
+}*/
