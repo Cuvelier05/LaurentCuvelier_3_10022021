@@ -6,7 +6,6 @@
 
   & .search_container {
     position: relative;
-    border-top: hotpink 2px;
 
     & .input_icon {
       position: absolute;
@@ -24,7 +23,7 @@
       background-color: #e5e5e5;
       border: none;
       outline: none;
-      border-top: hotpink;
+      box-shadow: inset 0em 0.2em #dad9d9;
     }
 
     & input::placeholder {

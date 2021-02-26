@@ -1,6 +1,8 @@
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./utils/animations.scss";
+@import "./utils/loader";
+@import "./utils/animMenu.scss";
+@import "./utils/animHeart";
 @import "./base/base";
 @import "./layout/header";
 @import "./pages/index.scss";
