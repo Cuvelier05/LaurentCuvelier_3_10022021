@@ -23,15 +23,17 @@
     <title>Ohmyfood</title>
   </head>
 
-  <!--LOADER
-    <section class="arriere_plan">
-      <span class="loader loader_quart"></span>
-      OHMYFOOD...
-    </section>
-  -->
   <body>
+    <!--LOADER-->
+    <section class="section green_bcg">
+      <span class="loader loader-quart"> </span>
+      <span class="loader_title">OHMYFOOD...</span>
+    </section>
+
     <!--HEADER-->
-    <header><h1>ohmyfood</h1></header>
+    <header>
+      <h1><a href="#contact">ohmyfood</a></h1>
+    </header>
 
     <!--SEARCH SECTION-->
     <section class="search">
@@ -50,7 +52,7 @@
     <section class="tools">
       <h3>Fonctionnement</h3>
       <ol>
-        <li class>
+        <li>
           <i class="fas fa-mobile-alt icone"></i>
           Choisissez un restaurant
         </li>
@@ -71,7 +73,7 @@
     <main class="restaurant">
       <h3>Restaurants</h3>
 
-      <a class="box" href="./laPaletteDuGout.html">
+      <a class="box" href="./lapalettedugout.html">
         <figure class="new_restaurant">
           <img
             src="images/restaurants/mini_la-palette-du-gout.jpg"
@@ -90,7 +92,7 @@
         </figure>
       </a>
 
-      <a class="box" href="./laNoteEnchantee.html">
+      <a class="box" href="./lanoteenchantee.html">
         <figure class="new_restaurant">
           <img
             src="images/restaurants/mini_la-note-enchantee.jpg"
@@ -109,7 +111,7 @@
         </figure>
       </a>
 
-      <a class="box" href="./aLaFrancaise.html">
+      <a class="box" href="./alafrancaise.html">
         <figure>
           <img
             src="images/restaurants/mini_a-la-francaise.jpg"
@@ -128,7 +130,7 @@
         </figure>
       </a>
 
-      <a class="box" href="./leDeliceDesSens.html">
+      <a class="box" href="./ledelicedessens.html">
         <figure>
           <img
             src="images/restaurants/mini_les-delices-des-sens.jpg"
@@ -151,6 +153,7 @@
     <!--FOOTER-->
     <footer>
       <img src="images/logo/ohmyffood_logo.png" alt="logo oh my food" />
+      <!-- <h5>ohmyfood</h5>-->
       <ul>
         <li>
           <i class="fas fa-utensils icone"></i>
@@ -162,7 +165,7 @@
           <a href="#">Devenir partenaire</a>
         </li>
         <li><a href="#">Mentions légales</a></li>
-        <li><a href="mailto:contact@hotmail.com">Contact</a></li>
+        <li id="contact"><a href="mailto:contact@hotmail.com">Contact</a></li>
       </ul>
     </footer>
   </body>

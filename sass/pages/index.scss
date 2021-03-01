@@ -4,17 +4,17 @@
   flex-direction: column;
   background-color: #f6f6f6;
 
-  & .search_container {
+  .search_container {
     position: relative;
 
-    & .input_icon {
+    .input_icon {
       position: absolute;
       top: 33%;
       left: 20%;
       font-size: 15px;
     }
 
-    & input {
+    input {
       width: 100%;
       padding: 1em 0 1em 0;
       text-align: center;
@@ -24,14 +24,14 @@
       border: none;
       outline: none;
       box-shadow: inset 0em 0.2em #dad9d9;
-    }
 
-    & input::placeholder {
-      color: black;
+      &::placeholder {
+        color: black;
+      }
     }
   }
 
-  & button {
+  button {
     cursor: pointer;
     max-width: 50%;
     color: white;
@@ -44,12 +44,16 @@
     margin-top: 2em;
     margin-bottom: 2em;
     @include gradient;
+
+    &:hover {
+      @include shadow;
+    }
   }
 }
 
 /* WORKING SECTION */
 .tools {
-  & .icone {
+  .icone {
     padding-right: 0.5em;
   }
 
@@ -67,24 +71,25 @@
     counter-increment: li;
     font-weight: bold;
     cursor: pointer;
-  }
+    transition: 1s;
 
-  & li:hover {
-    background-color: #f2eafb;
-    opacity: 0.9;
-    color: #9356dc;
-  }
+    &:hover {
+      background-color: #f2eafb;
+      opacity: 0.9;
+      color: #9356dc;
+    }
 
-  & li::before {
-    position: absolute;
-    left: -9px;
-    color: white;
-    background-color: #9356dc;
-    display: inline-block;
-    content: counter(li);
-    width: 1em;
-    padding: 1px 3px;
-    border-radius: 11px;
+    &::before {
+      position: absolute;
+      left: -9px;
+      color: white;
+      background-color: #9356dc;
+      display: inline-block;
+      content: counter(li);
+      width: 1em;
+      padding: 1px 3px;
+      border-radius: 11px;
+    }
   }
 }
 /*MAIN*/
@@ -112,6 +117,7 @@
     height: fit-content;
     background-color: white;
     border-radius: 1em;
+    transition: 1s;
 
     &:hover {
       background-color: #f2eafb;

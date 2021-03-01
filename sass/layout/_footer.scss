@@ -3,28 +3,27 @@ footer {
   background-color: #353535;
   color: white;
   padding: 2em;
-  & img {
+
+  img {
     width: 7em;
     margin-bottom: 1em;
   }
-  & h4 {
-    font-family: "Shrikland";
-    font-size: 2em;
-    font-weight: bold;
-  }
-  & a {
+  /*h5 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: large;
+    margin: 0;
+    line-height: 3em;
+  }*/
+  a {
     color: white;
     text-decoration: none;
   }
-  & ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  & .icone {
+
+  .icone {
     padding-right: 0.5em;
   }
-  & .icone.hand {
+
+  .icone.hand {
     transform: scale(0.9);
     padding-right: 0.3em;
   }
