@@ -1,4 +1,10 @@
 header h1 {
   text-align: center;
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  @include laptop {
+    font-size: xxx-large;
+  }
+  @include xl-screen {
+    font-size: xxx-large;
+  }
 }

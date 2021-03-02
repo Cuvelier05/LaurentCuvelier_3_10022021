@@ -11,19 +11,23 @@
 }
 
 // MEDIA QUERIES
+
 @mixin tablet {
+  /*$tablet-min: 426px --> $tablet-max: 768px;*/
   @media (min-width: $tablet-min) and (max-width: $tablet-max) {
     @content;
   }
 }
 
 @mixin laptop {
+  /*$laptop-min: 769px  -->  $laptop-max: 1024px;*/
   @media (min-width: $laptop-min) and (max-width: $laptop-max) {
     @content;
   }
 }
 
 @mixin xl-screen {
+  /*$min-screen: 1025px  -- >  $max-screen: 2675px;*/
   @media (min-width: $min-screen) and (max-width: $max-screen) {
     @content;
   }
