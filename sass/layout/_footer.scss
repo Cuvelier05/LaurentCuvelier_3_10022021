@@ -7,6 +7,9 @@ footer {
   img {
     width: 7em;
     margin-bottom: 1em;
+    @include tablet {
+      width: 8.5em;
+    }
   }
   /*h5 {
     font-family: "Shrikhand", sans-serif;
@@ -15,8 +18,12 @@ footer {
     line-height: 3em;
   }*/
   a {
+    line-height: 1.5em;
     color: white;
     text-decoration: none;
+    @include tablet {
+      padding: 0 1em 0 1em;
+    }
   }
 
   .icone {
@@ -26,5 +33,18 @@ footer {
   .icone.hand {
     transform: scale(0.9);
     padding-right: 0.3em;
+  }
+
+  ul {
+    @include tablet {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    @include laptop {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
   }
 }

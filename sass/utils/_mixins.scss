@@ -1,9 +1,30 @@
+// SHADOW INDEX & MENU WINDOW
 @mixin shadow {
   box-shadow: 0 0 0.5em 0.3em #cccccc;
   opacity: 0.9;
   transition: 1s;
 }
 
+// COLOR BIG BUTTON
 @mixin gradient {
   background: linear-gradient(172deg, $color-secondary 21%, $color-primary 79%);
+}
+
+// MEDIA QUERIES
+@mixin tablet {
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: $laptop-min) and (max-width: $laptop-max) {
+    @content;
+  }
+}
+
+@mixin xl-screen {
+  @media (min-width: $min-screen) and (max-width: $max-screen) {
+    @content;
+  }
 }
