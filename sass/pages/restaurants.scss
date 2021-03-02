@@ -18,6 +18,16 @@ main {
     width: 100%;
     height: 15em;
     object-fit: cover;
+    @include laptop {
+      width: 92%;
+      height: 21em;
+      border-radius: 2em 2em 0 0;
+    }
+    @include xl-screen {
+      width: 92%;
+      height: 21em;
+      border-radius: 2em 2em 0 0;
+    }
   }
 
   .menu {
@@ -28,6 +38,37 @@ main {
     list-style-type: none;
     padding: 1em;
     margin-top: -2em;
+    @include laptop {
+      width: 90%;
+      margin: -2em auto 2em auto;
+      border-radius: 2em;
+    }
+    @include xl-screen {
+      width: 90%;
+      margin: -2em auto 2em auto;
+      border-radius: 2em;
+    }
+    .menu_container {
+      @include laptop {
+        display: flex;
+        justify-content: space-around;
+      }
+      @include xl-screen {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+
+    .entree,
+    .dishes,
+    .dessert {
+      @include laptop {
+        width: 30%;
+      }
+      @include xl-screen {
+        width: 30%;
+      }
+    }
 
     .restaurant_name {
       display: flex;
@@ -58,6 +99,15 @@ main {
       border-radius: 1em;
       cursor: pointer;
       @include shadow;
+      @include tablet {
+        margin-bottom: 1.5em;
+      }
+      @include laptop {
+        margin-bottom: 1.5em;
+      }
+      @include xl-screen {
+        margin-bottom: 1.5em;
+      }
 
       .accompaniements {
         display: flex;
