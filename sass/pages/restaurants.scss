@@ -187,10 +187,10 @@ main {
       margin-top: 2em;
       margin-bottom: 2em;
       @include gradient;
-      transition: 1s;
 
       &:hover {
         @include shadow;
+        transition: 250ms;
       }
     }
   }

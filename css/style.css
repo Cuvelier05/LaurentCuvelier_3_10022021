@@ -1,18 +1,18 @@
 .green_bcg {
-  font-family: "Shrikland";
-  background-color: #99e2d0;
-  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shrikhand", "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 3.5em;
   position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #99e2d0;
+  color: #353535;
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
   z-index: 1;
-  top: 0;
-  cursor: wait;
-  color: white;
-  line-height: 615px;
-  animation: load 0s 3s forwards;
+  animation: load 0s 2s forwards;
 }
 
 .loader {
@@ -22,14 +22,15 @@
   position: relative;
 }
 
-.loader-quart {
+.loader_quart {
   border-radius: 50px;
   border: 6px solid #ff99e2;
   /* rgba(255, 255, 255, 0.4)*/
   vertical-align: middle;
+  margin-right: 0.5em;
 }
 
-.loader-quart::after {
+.loader_quart::after {
   content: "";
   position: absolute;
   top: -6px;
@@ -39,11 +40,7 @@
   border-radius: 50px;
   border: 6px solid transparent;
   border-top-color: #9356dc;
-  animation: spin 1s linear infinite;
-}
-
-.loader_title {
-  font-family: "Shrikland";
+  animation: spin 0.75s linear infinite;
 }
 
 /*----ANIMATION CIRCLE-----*/
@@ -226,7 +223,6 @@ header h1 {
   .search {
     margin: auto;
     width: 90%;
-    border: solid 0.2em #dad9d9;
     border-radius: 1.5em;
   }
 }
@@ -247,6 +243,7 @@ header h1 {
   font-size: 15px;
   /*$tablet-min: 426px --> $tablet-max: 768px;*/
   /*$laptop-min: 769px  -->  $laptop-max: 1024px;*/
+  /*$min-screen: 1025px  -- >  $max-screen: 2675px;*/
 }
 @media (min-width: 426px) and (max-width: 768px) {
   .search .search_container .input_icon {
@@ -254,6 +251,11 @@ header h1 {
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+  .search .search_container .input_icon {
+    left: 39%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 2675px) {
   .search .search_container .input_icon {
     left: 40%;
   }
@@ -301,9 +303,8 @@ header h1 {
   background: linear-gradient(172deg, #ff79da 21%, #9356dc 79%);
 }
 .search button:hover {
-  box-shadow: 0 0 0.5em 0.3em #cccccc;
+  box-shadow: 0px 3px 5px 1px #cccccc;
   opacity: 0.9;
-  transition: 1s;
   transition: 250ms;
 }
 
@@ -651,9 +652,9 @@ main .menu li {
   background-color: white;
   border-radius: 1em;
   cursor: pointer;
-  box-shadow: 0 0 0.5em 0.3em #cccccc;
+  box-shadow: 0px 3px 5px 1px #cccccc;
   opacity: 0.9;
-  transition: 1s;
+  transition: 250ms;
   /*$tablet-min: 426px --> $tablet-max: 768px;*/
   /*$laptop-min: 769px  -->  $laptop-max: 1024px;*/
   /*$min-screen: 1025px  -- >  $max-screen: 2675px;*/
@@ -739,12 +740,12 @@ main .menu button {
   margin-top: 2em;
   margin-bottom: 2em;
   background: linear-gradient(172deg, #ff79da 21%, #9356dc 79%);
-  transition: 1s;
 }
 main .menu button:hover {
-  box-shadow: 0 0 0.5em 0.3em #cccccc;
+  box-shadow: 0px 3px 5px 1px #cccccc;
   opacity: 0.9;
-  transition: 1s;
+  transition: 250ms;
+  transition: 250ms;
 }
 
 footer {

@@ -6,7 +6,6 @@
   @include laptop {
     margin: auto;
     width: 90%;
-    border: solid 0.2em #dad9d9;
     border-radius: 1.5em;
   }
   @include xl-screen {
@@ -27,6 +26,9 @@
         left: 30%;
       }
       @include laptop {
+        left: 39%;
+      }
+      @include xl-screen {
         left: 40%;
       }
     }
@@ -72,7 +74,6 @@
 
     &:hover {
       @include shadow;
-      transition: 250ms;
     }
   }
 }
