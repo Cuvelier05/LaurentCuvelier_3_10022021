@@ -69,10 +69,10 @@
     margin-top: 2em;
     margin-bottom: 2em;
     @include gradient;
-    transition: 250ms;
 
     &:hover {
       @include shadow;
+      transition: 250ms;
     }
   }
 }
