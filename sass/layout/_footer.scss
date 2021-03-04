@@ -10,12 +10,8 @@ footer {
     @include tablet {
       width: 8.5em;
     }
-    @include laptop {
+    @include lap-screen {
       width: 9em;
-    }
-    @include xl-screen {
-      padding-left: 5%;
-      width: 10em;
     }
   }
   /*h5 {
@@ -56,12 +52,7 @@ footer {
       justify-content: space-around;
       flex-wrap: wrap;
     }
-    @include laptop {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-    @include xl-screen {
+    @include lap-screen {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;

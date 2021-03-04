@@ -43,11 +43,7 @@
       border: none;
       outline: none;
       box-shadow: inset 0em 0.2em #dad9d9;
-      @include laptop {
-        box-shadow: none;
-        border-radius: 21px 21px 0 0;
-      }
-      @include xl-screen {
+      @include lap-screen {
         box-shadow: none;
         border-radius: 21px 21px 0 0;
       }
@@ -92,10 +88,7 @@
     @include tablet {
       text-align: center;
     }
-    @include laptop {
-      text-align: center;
-    }
-    @include xl-screen {
+    @include lap-screen {
       text-align: center;
     }
   }
@@ -105,11 +98,7 @@
       display: flex;
       flex-wrap: wrap;
     }
-    @include laptop {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    @include xl-screen {
+    @include lap-screen {
       display: flex;
       flex-wrap: wrap;
     }
@@ -176,33 +165,24 @@
     border-radius: 1.5em;
   }
   .restaurant_container {
-    @include laptop {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    @include xl-screen {
+    @include lap-screen {
       display: flex;
       flex-wrap: wrap;
     }
   }
+
   h3 {
     text-align: left;
     max-width: 90%;
     margin: auto;
-    @include laptop {
-      text-align: center;
-    }
-    @include xl-screen {
+    @include lap-screen {
       text-align: center;
     }
   }
 
   .box {
     text-align: left;
-    @include laptop {
-      width: 50%;
-    }
-    @include xl-screen {
+    @include lap-screen {
       width: 50%;
     }
   }

@@ -32,3 +32,10 @@
     @content;
   }
 }
+
+@mixin lap-screen {
+  /*$laptop-min:469px  -- >  $max-screen: 2675px;*/
+  @media (min-width: $laptop-min) and (max-width: $max-screen) {
+    @content;
+  }
+}

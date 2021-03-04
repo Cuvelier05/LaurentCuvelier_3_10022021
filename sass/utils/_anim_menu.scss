@@ -2,6 +2,18 @@
 
 @keyframes slide_in {
   0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide_top {
+  0% {
     transform: translateY(-1000px);
     opacity: 0;
   }
@@ -16,6 +28,11 @@
   animation: slide_in 2s ease-in-out forwards;
   animation-fill-mode: both;
   opacity: 0;
+  @include lap-screen {
+    animation: slide_top 2s ease forwards;
+    animation-fill-mode: both;
+    opacity: 0;
+  }
 }
 
 .second {
@@ -23,6 +40,12 @@
   animation-fill-mode: both;
   opacity: 0;
   animation-delay: 0.25s;
+  @include lap-screen {
+    animation: slide_top 2s ease forwards;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-delay: 0.25s;
+  }
 }
 
 .third {
@@ -30,6 +53,12 @@
   animation-fill-mode: both;
   opacity: 0;
   animation-delay: 0.5s;
+  @include lap-screen {
+    animation: slide_top 2s ease forwards;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-delay: 0.5s;
+  }
 }
 
 .fourth {
@@ -37,6 +66,12 @@
   animation-fill-mode: both;
   opacity: 0;
   animation-delay: 0.75s;
+  @include lap-screen {
+    animation: slide_top 2s ease forwards;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-delay: 0.75s;
+  }
 }
 
 .fifth {
@@ -44,6 +79,12 @@
   animation-fill-mode: both;
   opacity: 0;
   animation-delay: 1s;
+  @include lap-screen {
+    animation: slide_top 2s ease forwards;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-delay: 1s;
+  }
 }
 
 .sixth {
@@ -51,6 +92,12 @@
   animation-fill-mode: both;
   opacity: 0;
   animation-delay: 1.25s;
+  @include lap-screen {
+    animation: slide_top 2s ease forwards;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-delay: 1.25s;
+  }
 }
 
 .seventh {
@@ -58,6 +105,12 @@
   animation-fill-mode: both;
   opacity: 0;
   animation-delay: 1.5s;
+  @include lap-screen {
+    animation: slide_top 2s ease forwards;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-delay: 1.5s;
+  }
 }
 
 .eighth {
@@ -65,6 +118,12 @@
   animation-fill-mode: both;
   opacity: 0;
   animation-delay: 1.75s;
+  @include lap-screen {
+    animation: slide_top 2s ease forwards;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-delay: 1.75s;
+  }
 }
 
 .ninth {
@@ -72,6 +131,12 @@
   animation-fill-mode: both;
   opacity: 0;
   animation-delay: 2s;
+  @include lap-screen {
+    animation: slide_top 2s ease forwards;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-delay: 2s;
+  }
 }
 
 .tenth {
@@ -79,4 +144,10 @@
   animation-fill-mode: both;
   opacity: 0;
   animation-delay: 2.25s;
+  @include lap-screen {
+    animation: slide_top 2s ease forwards;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-delay: 2.25s;
+  }
 }
