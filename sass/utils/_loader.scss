@@ -1,3 +1,15 @@
+/*-------ANIMATION FULL LOADER-------*/
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+
 .green_bcg {
   display: flex;
   justify-content: center;
@@ -38,6 +50,16 @@
   margin-right: 0.5em;
 }
 
+/*----ANIMATION CIRCLE-----*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .loader_quart::after {
   content: "";
   position: absolute;
@@ -49,26 +71,4 @@
   border: 6px solid transparent;
   border-top-color: $color-primary;
   animation: spin 0.75s linear infinite;
-}
-
-/*----ANIMATION CIRCLE-----*/
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*-------ANIMATION FULL LOADER-------*/
-@keyframes load {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-    z-index: -1;
-  }
 }
